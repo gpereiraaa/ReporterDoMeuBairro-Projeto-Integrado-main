@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../scripts/update-desc-ocorrence.js" type="module" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <img id="logo" src="../img/logo.png" alt="">
+        <div class="header-extra-information">
+            <img id="user-notification" src="../img/Alarm.png" alt="">
+            <button id="bnt-new-ocorrence">Adicionar ocorrencia</button>
+            <img id="user-information" src="../img/Gear.png" alt="">
+        </div>
+    </header>
+    <div id="UpdatedOcorrenceDesc-screen" class="UpdatedOcorrenceDesc-screen">
+        <div class="desc">
+            <div>
+                <div>
+                    <img src="../img/arrow-back.png" class="image-other" alt="" id="back-page">
+                </div>
+                <div class="preview">
+                    <input class="preview-input" id="foto" type="file" accept="image/*">
+                    <label class="preview-label" for="foto"></label>
+                    <img class="preview-image" id="preview-image" src="../img/plus-math.png">
+                </div>
+            </div>
+            <div class="infos">
+                <div class="primary-info">
+                    <h4 id="newStatus-desc" class="city"></h4>
+                    <h4 id="newCity-desc" class="city"></h4>
+                </div>
+                <!-- Os campos vão receber os dados pelo js -->
+                <div class="second-info">
+                    <div>
+                        <h3>Descrição:</h3>
+                        <input type="text" name="" id="newDescOcorrence-input">
+                    </div>
+                    <div>
+                        <h3>CEP:</h3>
+                        <input type="text" name="" id="newCepOcorrence-input">
+                    </div>
+                    <div>
+                        <h3>Rua da ocorrencia</h3>
+                        <input type="text" name="" id="NewStreetNameOcorrence-input">
+                    </div>
+                    <div>
+                        <h3>Complemento da localização:</h3>
+                        <input type="text" name="" id="NewComplementOcorrence-input">
+                    </div>
+                    <div>
+                        <h3>Telefone do solicitante (opcional):</h3>
+                        <input type="text" name="" id="NewTelOcorrence-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="user-validation">
+                <h3>validação de usuario</h3>
+                <p></p>
+            </div>
+        </div>
+        <button id="bnt-update" class="bnt-new-ocorrence bonus">atualizar</button>
+    </div>
+    <footer>
+        <h3>2025 | © Instituição Responsavel</h3>
+    </footer>
+</body>
+
+</html>

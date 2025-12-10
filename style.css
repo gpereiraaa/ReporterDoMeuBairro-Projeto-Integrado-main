@@ -1,0 +1,419 @@
+:root {
+    --border: 1px solid black;
+    --primary-color: #1B325F;
+    --second-color: #4382ff;
+    --third-color: #E9F2F9;
+    --third-color-2: #e9f2f9c7;
+}
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+body {
+    padding-bottom: 100px;
+}
+
+/* Header */
+header {
+    display: flex;
+
+    background-color: var(--primary-color);
+
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 0px 40px 0px 40px;
+}
+
+.invisible {
+    display: none;
+}
+
+#logo {
+    height: 117px;
+}
+
+.header-extra-information {
+    display: flex;
+    gap: 30px;
+
+}
+
+.header-extra-information img {
+    height: 66px;
+    width: 75px;
+}
+
+.header-extra-information button {
+    border-radius: 25px;
+}
+
+/* css das telas de login, cadastro e nova senha */
+.firt-screen {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: end;
+    gap: 45px;
+    margin: 30px 90px;
+}
+
+.firt-screen div {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    max-width: 650px;
+
+}
+
+.title {
+    margin-top: 45px;
+    text-align: center;
+    border: var(--border);
+    border-radius: 25px;
+    gap: 64px;
+    font-size: 28px;
+}
+
+.input-first-screen {
+    display: flex;
+    gap: 16px;
+    padding: 16px 32px 16px 32px;
+    border: var(--border);
+    border-radius: 25px;
+}
+
+.bnt-first-screen {
+    padding: 5px 20px;
+}
+
+.bnt-first-screen h3 {
+    font-size: 24px;
+}
+
+.generic-input {
+    padding: 8px 16px 8px 16px;
+    border: var(--border);
+    border-radius: 15px;
+}
+
+.others {
+    margin-top: 64px;
+    color: var(--second-color);
+    font-size: 16px;
+}
+
+.bnt-first-screen {
+    padding: 8px 16px;
+    background-color: var(--third-color);
+    border-radius: 16px;
+    font-size: 32px;
+    width: 170px;
+}
+
+/* Segundo header da main */
+
+.sub-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px 16px;
+    background-color: var(--second-color);
+}
+
+.sub-header div {
+    display: flex;
+    gap: 16px;
+}
+
+.combo-box {
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: white;
+    font-size: 20px;
+}
+
+.btn-adm-panel {
+    padding: 8px 42px;
+    border-radius: 16px;
+    background-color: white;
+    font-size: 20px;
+}
+
+/* Tela principal */
+.main-screen {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    position: relative;
+    margin: 50px;
+}
+
+.card img {
+    border-radius: 25px;
+    border: var(--border);
+}
+
+.card div {
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+.card:hover .card-info-top {
+    visibility: visible;
+}
+
+.card:hover .card-info-bottom {
+    visibility: visible;
+}
+
+.card-info-top {
+    display: flex;
+    align-self: end;
+    background-color: var(--third-color-2);
+    border: var(--border);
+    border-radius: 25px;
+    padding: 4px 7px;
+    visibility: hidden;
+    position: absolute;
+    font-size: 16px;
+}
+
+.card-info-bottom {
+    position: absolute;
+    align-self: center;
+    bottom: 4px;
+
+    background-color: var(--third-color-2);
+    border: var(--border);
+    padding: 4px 7px;
+    border-radius: 25px;
+    visibility: hidden;
+
+}
+
+/* Tela de cadastro de ocorrencia */
+.city {
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 20px;
+    border: var(--border);
+    max-width: 250px;
+    width: 100%;
+}
+
+
+main.form-show form {
+    display: flex;
+}
+
+.preview {
+    position: relative;
+    border-radius: 15px;
+
+}
+
+.preview-input {
+    display: none;
+}
+
+.preview-image {
+    height: 100%;
+    width: 100%;
+    border-radius: 15px;
+
+}
+
+.preview-label {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+
+.desc {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    margin: 30px;
+
+}
+
+.image-other {
+    height: 35px;
+    margin-bottom: 25px;
+    margin-right: 15px;
+}
+
+.bonus {
+    display: flex;
+    justify-self: end;
+    margin: 15px 30px;
+}
+
+.newOcorrence-screen {
+    display: flex;
+    gap: 64px;
+    margin: 30px;
+}
+
+.primary-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+}
+
+.preview {
+    border: var(--border);
+    width: 100%;
+}
+
+.NewUser-data {
+    margin: 30px;
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    min-width: 300px;
+    margin-top: 32px;
+    gap: 32px;
+}
+
+.second-info {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.second-info div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.second-info input {
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 20px;
+    border: var(--border);
+}
+
+.bnt-new-ocorrence {
+    align-self: flex-end;
+    font-size: 24px;
+    padding: 5px 10px;
+    border: var(--border);
+    border-radius: 25px;
+}
+
+/* Tela de descrição das ocorrencias */
+.ocorrenceDesc-screen {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.teste {
+    display: flex;
+    flex-direction: row;
+    gap: 64px;
+    margin: 30px;
+    flex-grow: 1;
+}
+
+.user-validation {
+    display: flex;
+    flex-direction: column;
+    border: var(--border);
+    align-items: center;
+    gap: 16px;
+    margin: 30px;
+    padding: 15px;
+    background-color: var(--third-color);
+    border-radius: 15px;
+}
+
+.comments {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+    gap: 16px;
+    border: var(--border);
+    padding: 8px;
+    border-radius: 15px;
+}
+
+.comments div {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
+
+.comments input {
+    display: flex;
+    flex-grow: 1;
+    font-size: 32px;
+    border-radius: 15px;
+    border: var(--border);
+    padding: 4px 8px;
+}
+
+.comments button {
+    font-size: 32px;
+    padding: 4px 8px;
+    background-color: var(--third-color);
+    border: var(--border);
+    border-radius: 15px;
+}
+
+/* css da tela de informação de usuario */
+.user-data {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 30px;
+
+}
+
+.user-data div {
+    display: flex;
+}
+
+.bonus-info {
+    display: flex;
+    flex-direction: row;
+}
+
+/* css do footer */
+footer {
+    display: flex;
+    background-color: var(--third-color);
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    height: 75px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+}

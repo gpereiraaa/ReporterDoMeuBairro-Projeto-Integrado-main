@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../scripts/main-screen.js" defer type="module"></script>
+    <script></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <img id="logo" src="../img/logo.png" alt="">
+        <div class="header-extra-information">
+            <img id="user-notification" src="../img/Alarm.png" alt="">
+            <button id="bnt-new-ocorrence">Adicionar ocorrencia</button>
+            <img id="user-information" src="../img/Gear.png" alt="">
+        </div>
+    </header>
+    <main>
+        <div id="sub-header" class="sub-header">
+            <div>
+                <select id="combo-city" class="combo-box">
+                    <option value="">cidades</option>
+                    <!-- Essa parte vai envolver js, para criar a lista de cidade-->
+                </select>
+                <select id="combo-occurrenceType-filter" class="combo-box">
+                    <option value="">Tipo da ocorrencia</option>
+                    <!-- Essa parte vai envolver js, para criar a lista tipos de ocrrencia  -->
+                </select>
+
+                <select id="combo-status" class="combo-box">
+                    <option value="">Status</option>
+                    <option value="">Pendente</option>
+                    <option value="">Em Andamento</option>
+                    <option value="">Concluido</option>
+                </select>
+            </div>
+            <button id="adm-panel" class="btn-adm-panel">Painel adiministrativo</button>
+        </div>
+        <hero>
+            <!-- tela principal -->
+            <div class="main-screen" id="main-screen">
+                <!-- criação por js -->
+                <!-- Modelo -->
+                <!-- <div class="card">
+                    <div>
+                        <h2 class="card-info-top">Jandira, rua teste</h3>
+                        <h3 class="card-info-bottom">buraco na rua</h3>
+                    </div>
+                    <img src="./img/Rectangle-21.png" alt="">
+                </div> -->
+            </div>
+            <!-- Tela de criação de ocrrencia | newOcorrence-screen-->
+        </hero>
+    </main>
+    <footer>
+        <h3>2025 | © Instituição Responsavel</h3>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <script src="../scripts/desc-ocorrence-screen.js" defer type="module"></script>
+    <title>Document</title>
+</head>
+
+
+<body>
+    <header id="header" class="header">
+        <img id="logo" src="../img/logo.png" alt="">
+        <div class="header-extra-information">
+            <img id="user-notification" src="../img/Alarm.png" alt="">
+            <button id="bnt-new-ocorrence">Adicionar ocorrencia</button>
+            <img id="user-information" src="../img/Gear.png" alt="">
+        </div>
+    </header>
+    <div id="ocorrenceDesc-screen" class="ocorrenceDesc-screen">
+        <div class="desc">
+            <div>
+                <div>
+                    <img src="../img/arrow-back.png" class="image-other" alt="" id="back-page">
+                    <img src="../img/edit-pencil.png" class="image-other" alt="" id="update-ocorrence">
+                </div>
+                <img class="preview" id="preview" src="../img/Rectangle-21.png" alt="">
+            </div>
+            <div class="infos">
+                <div class="primary-info">
+                    <h4 id="status-desc" class="city"></h4>
+                    <h4 id="city-desc" class="city"></h4>
+                </div>
+                <!-- Os campos vão receber os dados pelo js -->
+                <div class="second-info">
+                    <div>
+                        <h3>Descrição:</h3>
+                        <input type="text" name="" id="descOcorrence-input" disabled>
+                    </div>
+                    <div>
+                        <h3>CEP:</h3>
+                        <input type="text" name="" id="cepOcorrence-input" disabled>
+                    </div>
+                    <div>
+                        <h3>Rua da ocorrencia</h3>
+                        <input type="text" name="" id="streetNameOcorrence-input" disabled>
+                    </div>
+                    <div>
+                        <h3>Complemento da localização:</h3>
+                        <input type="text" name="" id="complementOcorrence-input" disabled>
+                    </div>
+                    <div>
+                        <h3>Telefone do solicitante (opcional):</h3>
+                        <input type="text" name="" id="telOcorrence-input" disabled>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="user-validation">
+                <h3>validação de usuario</h3>
+                <p></p>
+            </div>
+            <div class="comments">
+                <div>
+                    <input type="text" placeholder="Adicione seu comentario ...">
+                    <button>comentar</button>
+                </div>
+                <p></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <h3>2025 | © Instituição Responsavel</h3>
+    </footer>
+</body>
+
+</html>
