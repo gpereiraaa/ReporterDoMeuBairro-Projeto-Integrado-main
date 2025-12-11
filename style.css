@@ -40,6 +40,7 @@ header {
 
 #logo {
     height: 117px;
+    width: auto;
 }
 
 .header-extra-information {
@@ -49,12 +50,15 @@ header {
 }
 
 .header-extra-information img {
-    height: 66px;
-    width: 75px;
+    width: 3.5rem;
+    height: 3.5rem;
 }
 
 .header-extra-information button {
     border-radius: 25px;
+    font-size: 1rem;
+    padding: 0px 20px;
+    white-space: nowrap;
 }
 
 /* css das telas de login, cadastro e nova senha */
@@ -64,7 +68,7 @@ header {
     justify-content: center;
     align-items: end;
     gap: 45px;
-    margin: 30px 90px;
+    margin: 30px 10%px;
 }
 
 .firt-screen div {
@@ -141,12 +145,14 @@ header {
     background-color: white;
     font-size: 20px;
 }
-
+.small{
+    width: 170px;
+}
 .btn-adm-panel {
-    padding: 8px 42px;
+    padding: 8px 10px;
     border-radius: 16px;
     background-color: white;
-    font-size: 20px;
+    font-size: 15px;
 }
 
 /* Tela principal */
@@ -416,4 +422,200 @@ footer {
     left: 0;
     right: 0;
     width: 100%;
+}
+
+/* Responsividade para tablet */
+
+/* Tela de Login */
+@media (max-width: 880px) {
+    
+    .firt-screen {
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 20px ;
+        gap: 30px;
+    }
+
+    .firt-screen > div {
+        max-width: 100%;
+    }
+
+    .title h1 {
+        font-size: 1.5rem;
+    }
+
+    .bnt-first-screen {
+        width: 100%;
+        max-width: 200px;
+        padding: 10px 20 px;
+        font-size: 1.25rem;
+    }
+}
+
+/* Header */
+@media (max-width: 768px) {
+
+    #header {
+    padding: 10px 15px;
+    }
+
+    #logo {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .header-extra-information {
+        gap: 10px;
+    }
+
+    #user-notification, #user-information {
+        width: 30px;
+        height: 30px;
+    }
+
+    #bnt-new-ocorrence {
+        font-size: 0.8rem;
+        padding: 5px 10px;
+    }
+}
+
+/* Sub-header */
+@media (max-width: 803px) {
+
+    #sub-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+        padding: 10px 15px;
+    }
+
+    #sub-header > div {
+        display: flex;
+        gap: 10px;
+    }
+
+    .combo-box,
+    #adm-painel {
+        width: 100%;
+    }
+}
+
+
+#newOcorrence-screen > div:first-child {
+    position: relative;
+}
+
+
+/* Nova ocorrência */
+@media (max-width: 768px) {
+
+    #newOcorrence-screen {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 15px;
+        gap: 20px;
+    }
+
+}
+
+Botão de voltar
+#back-page {
+    position: absolute;
+    top: 30px;
+    left: -100px;
+    z-index: 10;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+
+/* Main */
+@media (max-width: 768px) {
+
+    .main-screen {
+        display: grid;
+        gap: 20px;
+        margin: 20px;
+        justify-content: center;
+    }
+
+    #combo-occurrenceType-filter {
+        font-size: 1rem;
+    }
+}
+
+
+/* Celular */
+@media (max-width: 480px) {
+
+ 
+
+    /* Header */
+    #logo {
+        max-width: 100px;
+    }
+
+    .header-extra-information{
+        gap: 5px;
+    }
+
+    #bnt-new-ocorrence {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+    }
+
+    .header-extra-information img {
+        width: 25px;
+        height: 25px;
+    }
+
+    /* Sub-header */
+   .sub-header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 10px 15px;
+    gap: 10px;
+   }
+
+   .combo-box {
+    width: 100%;
+    padding: 6px 10px;
+   }
+
+   .btn-adm-panel {
+    width: 100%;
+    font-size: 0.7rem;
+   }
+
+    /* Tela principal */
+    .main-screen {
+        grid-template-columns: 1fr;
+    }
+
+    .newOcorrence-screen, .teste, .user-data {
+        margin: 15px;
+    }
+
+    .second-info input, .combo-box, .city {
+        font-size: 0.8rem;
+    }
+
+    #combo-occurrenceType-filter {
+        font-size: 0.8rem;
+    }
+
+    .comments input, .comments button {
+        font-size: 1rem;
+    }
+
+    .comments div {
+        flex-direction: column;
+    }
+
+    footer{
+        height: 50px;
+        font-size: 0.7rem;
+    }
+
 }

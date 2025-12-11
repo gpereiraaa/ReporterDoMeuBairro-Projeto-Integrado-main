@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="../scripts/update-desc-ocorrence.js" type="module" defer></script>
+    <script src="../scripts/update-desc-ocorrence.js" defer type="module"></script>
     <title>Document</title>
 </head>
 
@@ -37,30 +37,30 @@
             </div>
             <div class="infos">
                 <div class="primary-info">
-                    <h4 id="newStatus-desc" class="city"></h4>
-                    <h4 id="newCity-desc" class="city"></h4>
+                    <h4 id="status" class="city"></h4>
+                    <h4 id="city" class="city"></h4>
                 </div>
                 <!-- Os campos vão receber os dados pelo js -->
                 <div class="second-info">
                     <div>
                         <h3>Descrição:</h3>
-                        <input type="text" name="" id="newDescOcorrence-input">
+                        <input type="text" name="" id="desc-input">
                     </div>
                     <div>
                         <h3>CEP:</h3>
-                        <input type="text" name="" id="newCepOcorrence-input">
+                        <input type="text" name="" id="cep-input">
                     </div>
                     <div>
                         <h3>Rua da ocorrencia</h3>
-                        <input type="text" name="" id="NewStreetNameOcorrence-input">
+                        <input type="text" name="" id="street-name-input">
                     </div>
                     <div>
                         <h3>Complemento da localização:</h3>
-                        <input type="text" name="" id="NewComplementOcorrence-input">
+                        <input type="text" name="" id="complement-input">
                     </div>
                     <div>
                         <h3>Telefone do solicitante (opcional):</h3>
-                        <input type="text" name="" id="NewTelOcorrence-input">
+                        <input type="text" name="" id="tel-input">
                     </div>
                 </div>
             </div>
@@ -68,10 +68,10 @@
         <div>
             <div class="user-validation">
                 <h3>validação de usuario</h3>
-                <p></p>
+                <input type="text">
             </div>
         </div>
-        <button id="bnt-update" class="bnt-new-ocorrence bonus">atualizar</button>
+        <button class="bnt-new-ocorrence bonus">atualizar</button>
     </div>
     <footer>
         <h3>2025 | © Instituição Responsavel</h3>

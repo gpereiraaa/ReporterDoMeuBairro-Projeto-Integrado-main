@@ -33,7 +33,7 @@ async function preencherCampos({ target }) {
 
 document.getElementById('cep-input').addEventListener("focusout", preencherCampos)
 
-registerBtn.addEventListener("click", async function (event) {
+registerBtn.addEventListener("click", async function () {
     
     let usuarios = {
         "nome": `${nome.value}`,
@@ -53,7 +53,11 @@ registerBtn.addEventListener("click", async function (event) {
     await inserirUser(usuarios)
     // await verifyPassword(usuarios)
 
-    window.location.href = '../pages/main-screen.html'
+    if(verifiedPassword.status_code == 200){
+        window.location.href = './pages/main-screen.html'
+    }else{
+        return false
+    }
 })
 
 

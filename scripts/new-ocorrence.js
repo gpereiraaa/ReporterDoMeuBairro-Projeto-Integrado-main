@@ -12,19 +12,19 @@ async function pesquisarCep(cepNewOcorrence) {
 
 async function preencherCampos({ target }) {
     const infoCep = await pesquisarCep(target.value)
-    document.getElementById('street-name-new-ocorrence').value = infoCep.logradouro
+    document.getElementById('street-name').value = infoCep.logradouro
     document.getElementById('city-input').value = infoCep.localidade
 }
 
-document.getElementById('cep-input-new-ocorrence').addEventListener("focusout", preencherCampos)
+document.getElementById('cep-input').addEventListener("focusout", preencherCampos)
 
 saveOcorrence.addEventListener("click", async function () {
 
-    const descInputNewOcorrence = document.getElementById("desc-input-new-ocorrence").value
-    const streetNameNewOcorrence = document.getElementById("street-name-new-ocorrence").value
-    const complementInputNewOcorrence = document.getElementById("complementOcorrence-input-new-ocorence").value
-    const telInputNewOcorrence = document.getElementById("tel-input-new-ocorence").value
-    const cepInputNewOcorrence = document.getElementById("cep-input-new-ocorrence").value
+    const descInputNewOcorrence = document.getElementById("desc-input").value
+    const streetNameNewOcorrence = document.getElementById("street-name").value
+    const complementInputNewOcorrence = document.getElementById("complement-input").value
+    const telInputNewOcorrence = document.getElementById("tel-input").value
+    const cepInputNewOcorrence = document.getElementById("cep-input").value
     const imageInput = document.getElementById("foto")
 
     const data = await pesquisarCep(cepInputNewOcorrence)

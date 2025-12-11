@@ -10,7 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
-    <script src="../script.js" defer type="module"></script>
+    <script src="../scripts/update-user-data.js" defer type="module"></script>
     <title>Document</title>
 </head>
 
@@ -26,48 +26,52 @@
     </header>
     <div class="NewUser-data" id="NewUser-data">
         <div class="bonus-info">
-            <img src="./img/arrow-back.png" class="image-other" id="back-page-newUserData-userData" alt="">
+            <img src="../img/arrow-back.png" class="image-other" id="back-page" alt="">
         </div>
         <div class="second-info">
             <div>
                 <h3>Nome:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-nameInput">
+                <input type="text" class="generic-input" name="" id="name-input">
             </div>
             <div>
                 <h3>Email:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-emailInput">
+                <input type="text" class="generic-input" name="" id="email-input">
+            </div>
+            <div>
+                <h3>Telefone:</h3>
+                <input type="text" class="generic-input" name="" id="telefone-input">
+            </div>
+            <div>
+                <h3>CPF:</h3>
+                <input type="text" class="generic-input" name="" id="cpf-input">
             </div>
             <div>
                 <h3>CEP:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-cepInput">
+                <input type="text" class="generic-input" name="" id="cep-input">
             </div>
             <div>
                 <h3>Logradouro:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-street-nameInput" disabled>
+                <input type="text" class="generic-input" name="" id="street-name-input" disabled>
             </div>
             <div>
                 <h3>Numero:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-street-numberInput" disabled>
+                <input type="text" class="generic-input" name="" id="number-input" disabled>
             </div>
             <div>
                 <h3>bairro:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-street-groupInput" disabled>
+                <input type="text" class="generic-input" name="" id="group-input" disabled>
             </div>
             <div>
                 <h3>Cidade:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-cityInput" disabled>
+                <input type="text" class="generic-input" name="" id="city-input" disabled>
             </div>
             <div>
                 <h3>Estado:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-stateInput" disabled>
+                <input type="text" class="generic-input" name="" id="state-input" disabled>
             </div>
             <div>
                 <h3>Complemento:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-complementsInput" disabled>
-            </div>
-            <div>
-                <h3>Senha:</h3>
-                <input type="text" class="generic-input" name="" id="NewUser-passwordInput">
+                <input type="text" class="generic-input" name="" id="complements-input" >
             </div>
             <button id="update-userData" class="bnt-new-ocorrence">alterar</button>
         </div>

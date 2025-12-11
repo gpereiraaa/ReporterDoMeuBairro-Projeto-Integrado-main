@@ -31,34 +31,34 @@
                     <img src="../img/arrow-back.png" class="image-other" alt="" id="back-page">
                     <img src="../img/edit-pencil.png" class="image-other" alt="" id="update-ocorrence">
                 </div>
-                <img class="preview" id="preview" src="../img/Rectangle-21.png" alt="">
+                <img class="preview" src="../img/Rectangle-21.png" alt="">
             </div>
             <div class="infos">
                 <div class="primary-info">
-                    <h4 id="status-desc" class="city"></h4>
-                    <h4 id="city-desc" class="city"></h4>
+                    <h4 id="status" class="city"></h4>
+                    <h4 id="city" class="city"></h4>
                 </div>
                 <!-- Os campos vão receber os dados pelo js -->
                 <div class="second-info">
                     <div>
                         <h3>Descrição:</h3>
-                        <input type="text" name="" id="descOcorrence-input" disabled>
+                        <input type="text" name="" id="desc-input" disabled>
                     </div>
                     <div>
                         <h3>CEP:</h3>
-                        <input type="text" name="" id="cepOcorrence-input" disabled>
+                        <input type="text" name="" id="cep-input" disabled>
                     </div>
                     <div>
                         <h3>Rua da ocorrencia</h3>
-                        <input type="text" name="" id="streetNameOcorrence-input" disabled>
+                        <input type="text" name="" id="street-name-input" disabled>
                     </div>
                     <div>
                         <h3>Complemento da localização:</h3>
-                        <input type="text" name="" id="complementOcorrence-input" disabled>
+                        <input type="text" name="" id="complement-input" disabled>
                     </div>
                     <div>
                         <h3>Telefone do solicitante (opcional):</h3>
-                        <input type="text" name="" id="telOcorrence-input" disabled>
+                        <input type="text" name="" id="tel-input" disabled>
                     </div>
                 </div>
             </div>
@@ -70,10 +70,10 @@
             </div>
             <div class="comments">
                 <div>
-                    <input type="text" placeholder="Adicione seu comentario ...">
-                    <button>comentar</button>
+                    <input type="text" id="coment-input" placeholder="Adicione seu comentario ...">
+                    <button id="coment-btn">comentar</button>
                 </div>
-                <p></p>
+                <div id="comments-cards"></div>
             </div>
         </div>
     </div>

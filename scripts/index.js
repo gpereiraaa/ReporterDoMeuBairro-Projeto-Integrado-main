@@ -12,9 +12,13 @@ logInBtn.addEventListener("click", async function () {
         "senha":`${passwordInput}`
     }
 
-    await verifyPassword(usuarios, emailInput)
+    let verifiedPassword = await verifyPassword(usuarios, emailInput)
 
-    //window.location.href = './pages/main-screen.html'
+    // if(verifiedPassword.status_code == 200){
+        window.location.href = './pages/main-screen.html'
+    // }else{
+    //     return false
+    // }
 })
 
 

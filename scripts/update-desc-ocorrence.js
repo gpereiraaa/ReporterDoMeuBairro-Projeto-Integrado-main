@@ -77,11 +77,11 @@ buttonUpdateOcorrence.addEventListener("click", async function () {
     console.log('batata')
     let id = itemJson.id
 
-    const descInputNewOcorrence = document.getElementById("newDescOcorrence-input").value
-    const streetNameNewOcorrence = document.getElementById("NewStreetNameOcorrence-input").value
-    const complementInputNewOcorrence = document.getElementById("NewComplementOcorrence-input").value
-    const telInputNewOcorrence = document.getElementById("NewTelOcorrence-input").value
-    const cepInputNewOcorrence = document.getElementById("newCepOcorrence-input").value
+    const descInputNewOcorrence = document.getElementById("desc-input").value
+    const streetNameNewOcorrence = document.getElementById("name-input").value
+    const complementInputNewOcorrence = document.getElementById("complement-input").value
+    const telInputNewOcorrence = document.getElementById("tel-input").value
+    const cepInputNewOcorrence = document.getElementById("cep-input").value
 
     const imageInput = document.getElementById("foto")
 
